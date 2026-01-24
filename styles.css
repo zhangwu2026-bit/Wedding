@@ -386,3 +386,60 @@ hr.section-divider{
   height:100%;
   border:0;
 }
+/* --- Carousel (Cat Photos) --- */
+.carousel{
+  position: relative;
+  max-width: 720px;
+  margin: 20px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-track{
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.carousel-img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel-img.active{
+  display: block;
+}
+
+.carousel-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.9);
+  border: 1px solid var(--line);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.carousel-btn.prev{ left: -18px; }
+.carousel-btn.next{ right: -18px; }
+
+.carousel-btn:hover{
+  background: white;
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .carousel-img{ height: 300px; }
+  .carousel-btn.prev{ left: 6px; }
+  .carousel-btn.next{ right: 6px; }
+}
