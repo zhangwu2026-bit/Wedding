@@ -185,27 +185,34 @@ if (clearBtn) {
   });
 }
 
-
 // ----- Simple carousel (Cat Photos) -----
-document.querySelectorAll(".carousel").forEach((carousel) => {
-  const images = Array.from(carousel.querySelectorAll(".carousel-img"));
-  const prevBtn = carousel.querySelector(".carousel-btn.prev");
-  const nextBtn = carousel.querySelector(".carousel-btn.next");
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".carousel").forEach((carousel) => {
+    const images = Array.from(carousel.querySelectorAll(".carousel-img"));
+    const prevBtn = carousel.querySelector(".carousel-btn.prev");
+    const nextBtn = carousel.querySelector(".carousel-btn.next");
 
-  if (images.length === 0 || !prevBtn || !nextBtn) return;
+    if (images.length <= 1 || !prevBtn || !nextBtn) return;
 
-  let current = images.findIndex(img => img.classList.contains("active"));
-  if (current < 0) current = 0;
+    let current = images.findIndex(img => img.classList.contains("active"));
+    if (current < 0) current = 0;
 
-  function show(i){
-    images.forEach(img => img.classList.remove("active"));
-    images[i].classList.add("active");
-  }
+    function show(i){
+      images.forEach(img => img.classList.remove("active"));
+      images[i].classList.add("active");
+    }
 
-  prevBtn.addEventListener("click", () => {
-    current = (current - 1 + images.length) % images.length;
-    show(current);
+    prevBtn.addEventListener("click", () => {
+      current = (current - 1 + images.length) % images.length;
+      show(current);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      current = (current + images.length + 1) % images.length;
+      show(current);
+    });
   });
+});
 
   nextBtn.addEventListener("click", () => {
     current = (current + 1) % images.length;
