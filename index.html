@@ -76,19 +76,21 @@
       </div>
       <hr class="section-divider"/>
 
-      <h3>Cat Photos</h3>
-      <p class="lead muted">We couldn’t resist.</p>
+     <h3>Cat Photos</h3>
+     <p class="lead muted">We couldn’t resist.</p>
 
-      <div class="gallery cats">
-        <figure class="photo-card">
-          <img src="assets/cat1.jpg" alt="Cat photo 1" loading="lazy">
-          <figcaption>Cat caption (optional).</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="assets/cat2.jpg" alt="Cat photo 2" loading="lazy">
-          <figcaption>Cat caption (optional).</figcaption>
-        </figure>
-      </div>
+<div class="carousel" aria-label="Cat photo carousel">
+  <button class="carousel-btn prev" aria-label="Previous photo">‹</button>
+
+  <div class="carousel-track">
+    <img src="assets/cat1.jpg" alt="Cat photo 1" class="carousel-img active">
+    <img src="assets/cat2.jpg" alt="Cat photo 2" class="carousel-img">
+    <img src="assets/cat3.jpg" alt="Cat photo 3" class="carousel-img">
+    <img src="assets/cat4.jpg" alt="Cat photo 4" class="carousel-img">
+  </div>
+
+  <button class="carousel-btn next" aria-label="Next photo">›</button>
+</div>
 
     </div>
   </section>
