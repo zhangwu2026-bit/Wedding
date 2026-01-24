@@ -37,16 +37,16 @@ a:hover{ text-decoration:underline; }
 .nav{
   max-width:1100px;
   margin:0 auto;
-  padding:22px 20px;
+  padding:14px 18px;
   display:flex;
   align-items:center;
-  gap:20px;
+  gap:14px;
 }
 
 .brand{
   font-family:var(--serif);
   font-weight:600;
-  font-size:26px;
+  font-size:18px;
   color:var(--ink);
 }
 
@@ -63,14 +63,14 @@ a:hover{ text-decoration:underline; }
 .nav-links{
   margin-left:auto;
   display:flex;
-  gap:18px;
+  gap:14px;
   flex-wrap:wrap;
 }
 .nav-links a{
   color:var(--ink);
   opacity:.86;
   font-weight:600;
-  font-size:20px;
+  font-size:14px;
 }
 .nav-links a:hover{ opacity:1; }
 
@@ -386,11 +386,13 @@ hr.section-divider{
   height:100%;
   border:0;
 }
+
+
 /* --- Carousel (Cat Photos) --- */
 .carousel{
   position: relative;
-  max-width: 720px;
-  margin: 20px auto 0;
+  max-width: 860px;
+  margin: 18px auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -402,6 +404,7 @@ hr.section-divider{
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: var(--card);
+  box-shadow: 0 8px 20px rgba(0,0,0,.05);
 }
 
 .carousel-img{
@@ -419,27 +422,26 @@ hr.section-divider{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.92);
   border: 1px solid var(--line);
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   box-shadow: var(--shadow);
+  display: grid;
+  place-items: center;
 }
 
 .carousel-btn.prev{ left: -18px; }
 .carousel-btn.next{ right: -18px; }
 
-.carousel-btn:hover{
-  background: white;
-}
+.carousel-btn:hover{ background: white; }
 
-/* Mobile */
 @media (max-width: 600px){
   .carousel-img{ height: 300px; }
-  .carousel-btn.prev{ left: 6px; }
-  .carousel-btn.next{ right: 6px; }
+  .carousel-btn.prev{ left: 10px; }
+  .carousel-btn.next{ right: 10px; }
 }

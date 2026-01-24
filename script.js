@@ -184,19 +184,22 @@ if (clearBtn) {
     renderRsvps();
   });
 }
+
+
 // ----- Simple carousel (Cat Photos) -----
-const carousels = document.querySelectorAll(".carousel");
+document.querySelectorAll(".carousel").forEach((carousel) => {
+  const images = Array.from(carousel.querySelectorAll(".carousel-img"));
+  const prevBtn = carousel.querySelector(".carousel-btn.prev");
+  const nextBtn = carousel.querySelector(".carousel-btn.next");
 
-carousels.forEach(carousel => {
-  const images = carousel.querySelectorAll(".carousel-img");
-  const prevBtn = carousel.querySelector(".prev");
-  const nextBtn = carousel.querySelector(".next");
+  if (images.length === 0 || !prevBtn || !nextBtn) return;
 
-  let current = 0;
+  let current = images.findIndex(img => img.classList.contains("active"));
+  if (current < 0) current = 0;
 
-  function show(index){
+  function show(i){
     images.forEach(img => img.classList.remove("active"));
-    images[index].classList.add("active");
+    images[i].classList.add("active");
   }
 
   prevBtn.addEventListener("click", () => {
