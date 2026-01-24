@@ -208,14 +208,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     nextBtn.addEventListener("click", () => {
-      current = (current + images.length + 1) % images.length;
+      current = (current + 1) % images.length;
       show(current);
     });
-  });
-});
-
-  nextBtn.addEventListener("click", () => {
-    current = (current + 1) % images.length;
-    show(current);
   });
 });
