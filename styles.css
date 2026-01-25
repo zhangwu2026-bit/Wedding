@@ -452,7 +452,7 @@ header{
 header h1,
 header .brand{
   font-size: 2.2rem !important;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 header nav a{
@@ -463,7 +463,7 @@ header nav a{
 /* --- Hero name sizing --- */
 .hero h1,
 .hero-title{
-  font-size: 3rem;   /* try 2.6–3.2rem to taste */
+  font-size: 2.4rem;   /* try 2.6–3.2rem to taste */
   line-height: 1.15;
 }
 
