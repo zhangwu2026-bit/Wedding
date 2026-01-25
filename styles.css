@@ -476,6 +476,11 @@ header nav a{
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+/* === Tighten space between header and first section === */
+header + section{
+  margin-top: 0 !important;
+  padding-top: 24px !important;
+}
 @media (max-width: 600px){
   .carousel-track{ aspect-ratio: 4 / 3; }
   header h1,
