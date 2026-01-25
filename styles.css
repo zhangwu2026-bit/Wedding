@@ -446,17 +446,17 @@ hr.section-divider{
 
 /* --- Bigger header / navigation --- */
 .site-header{
-  padding: 42px 0;   /* more vertical breathing room */
+  padding: 80px 0;   /* more vertical breathing room */
 }
 
 .site-header .brand{
   font-size: 12 rem; /* was ~1.5–1.7rem */
-  font-weight: 2000;
+  font-weight: 4000;
 }
 
 .site-header .nav-links a{
-  font-size: 5rem;  /* nav items bigger */
-  margin-left: 42px;  /* slightly more spacing */
+  font-size: 8rem;  /* nav items bigger */
+  margin-left: 80px;  /* slightly more spacing */
 }
 
 @media (max-width: 600px){
