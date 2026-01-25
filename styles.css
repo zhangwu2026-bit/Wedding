@@ -409,7 +409,8 @@ hr.section-divider{
 
 .carousel-img{
   width: 100%;
-  height: 420px;
+  height: auto;              /* ← key change */
+  max-height: 520px;         /* keeps giant photos reasonable */
   object-fit: contain;      /* ← KEY CHANGE */
   background: #f4f1eb;      /* soft neutral background */
   display: none;
