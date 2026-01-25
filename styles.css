@@ -444,6 +444,21 @@ hr.section-divider{
 
 .carousel-btn:hover{ background: white; }
 
+/* --- Bigger header / navigation --- */
+.site-header{
+  padding: 22px 0;   /* more vertical breathing room */
+}
+
+.site-header .brand{
+  font-size: 2.2rem; /* was ~1.5–1.7rem */
+  font-weight: 600;
+}
+
+.site-header .nav-links a{
+  font-size: 1.1rem;  /* nav items bigger */
+  margin-left: 22px;  /* slightly more spacing */
+}
+
 @media (max-width: 600px){
   .carousel-track{ aspect-ratio: 4 / 3; }
 }
