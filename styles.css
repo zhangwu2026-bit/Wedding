@@ -466,7 +466,16 @@ header nav a{
   font-size: 2.4rem;   /* try 2.6–3.2rem to taste */
   line-height: 1.15;
 }
-
+/* --- Tighten hero section spacing --- */
+.hero{
+  padding-top: 40px !important;   /* was likely 80–120px */
+  padding-bottom: 40px !important;
+}
+/* --- Reduce hero card margin --- */
+.hero .card{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 @media (max-width: 600px){
   .carousel-track{ aspect-ratio: 4 / 3; }
   header h1,
@@ -478,4 +487,9 @@ header nav a{
     font-size: 1rem !important;
     margin-left: 14px;
   }
+  /* --- Reduce hero card margin --- */
+.hero .card{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 }
