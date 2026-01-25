@@ -398,25 +398,23 @@ hr.section-divider{
   justify-content: center;
 }
 
+/* Force a consistent frame, and fit every photo inside it */
 .carousel-track{
   width: 100%;
-  max-width: 860px;
-  margin: 0 auto;
+  aspect-ratio: 16 / 10;      /* change to 4/3 or 1/1 if you prefer */
+  overflow: hidden;
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: #f4f1eb;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .carousel-img{
-  width: 100%;
-  height: auto;              /* ← key change */
-  max-height: 520px;         /* keeps giant photos reasonable */
-  object-fit: contain;      /* ← KEY CHANGE */
-  background: #f4f1eb;      /* soft neutral background */
+  width: 100% !important;
+  height: 100% !important;    /* KEY: fill the frame */
+  object-fit: contain !important;  /* KEY: no cropping */
   display: none;
 }
 
