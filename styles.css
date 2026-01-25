@@ -450,7 +450,7 @@ hr.section-divider{
 }
 
 .site-header .brand{
-  font-size: 6 rem; /* was ~1.5–1.7rem */
+  font-size: 12 rem; /* was ~1.5–1.7rem */
   font-weight: 2000;
 }
 
