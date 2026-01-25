@@ -400,11 +400,15 @@ hr.section-divider{
 
 .carousel-track{
   width: 100%;
-  overflow: hidden;
+  max-width: 860px;
+  margin: 0 auto;
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  background: var(--card);
-  box-shadow: 0 8px 20px rgba(0,0,0,.05);
+  background: #f4f1eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .carousel-img{
