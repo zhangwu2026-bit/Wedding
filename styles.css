@@ -460,6 +460,13 @@ header nav a{
   margin-left: 22px;
 }
 
+/* --- Hero name sizing --- */
+.hero h1,
+.hero-title{
+  font-size: 3rem;   /* try 2.6–3.2rem to taste */
+  line-height: 1.15;
+}
+
 @media (max-width: 600px){
   .carousel-track{ aspect-ratio: 4 / 3; }
   header h1,
