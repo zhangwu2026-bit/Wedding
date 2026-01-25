@@ -64,16 +64,17 @@
       <h2>Photos &amp; Our Story</h2>
       <p class="lead muted">Swap in your favorite photos in <code>/assets</code>.</p>
 
-      <div class="gallery">
-        <figure class="photo-card">
-          <img src="assets/story1.jpg" alt="Cathy and Linyi photo 1" loading="lazy">
-          <figcaption>Our story caption (optional).</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="assets/story2.jpg" alt="Cathy and Linyi photo 2" loading="lazy">
-          <figcaption>Another caption (optional).</figcaption>
-        </figure>
-      </div>
+<div class="carousel story-carousel" aria-label="Our story photo carousel">
+  <button class="carousel-btn prev" type="button" aria-label="Previous photo">‹</button>
+
+  <div class="carousel-track">
+    <img src="assets/story1.jpg" alt="Our story photo 1" class="carousel-img active">
+    <img src="assets/story2.jpg" alt="Our story photo 2" class="carousel-img">
+    <img src="assets/story3.jpg" alt="Our story photo 3" class="carousel-img">
+  </div>
+
+  <button class="carousel-btn next" type="button" aria-label="Next photo">›</button>
+</div>
       <hr class="section-divider"/>
 
       <h3>Cat Photos</h3>
