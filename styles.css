@@ -445,7 +445,5 @@ hr.section-divider{
 .carousel-btn:hover{ background: white; }
 
 @media (max-width: 600px){
-  .carousel-img{ height: 300px; }
-  .carousel-btn.prev{ left: 10px; }
-  .carousel-btn.next{ right: 10px; }
+  .carousel-track{ aspect-ratio: 4 / 3; }
 }
